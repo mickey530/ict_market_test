@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 부트 스트랩 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <style>
+        #profile {font-size: 0;}
+        header {
+            width: 100%;
+            background-color: whitesmoke;
+            position: sticky;
+            top:0;
+            z-index: 1;}
+        body {min-height: 100vh;}
+        .content{
+            text-align: center;
+            margin-bottom: auto;
+        }
+        .more{text-align: right;}
+        .card-body{padding:30px; text-align: left;}
+        footer {
+            position: fixed;
+            bottom:0;
+            font-size: 8px;
+            width: 100%;
+            padding:20px;
+            background-color: whitesmoke;
+        }
+        a:hover {}
+        .heart:hover{color:red;}
+        li {
+          list-style-type: none;
+          text-align: left;
+          }
+        .navbar li {
+          padding: 10px 10px;
+          border-radius: 5px;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        a:hover{
+          color:dodgerblue;
+        }
+        .selected {
+          background-color: whitesmoke;
+        }
+        .form-signin {
+            width: 100%;
+            max-width: 550px;
+            padding: 15px;
+            margin: auto;
+        }
+        .form-floating{height: 70px;}
+        .btn{font-size:1.25rem; margin-bottom: 10px;}
+    </style>
+    <title>ICT MARKET</title>
+</head>
+<body>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="main_a_login.html" class="nav-link px-2 link-dark" style="padding:0;"><h2 style="margin:0">ICT MARKET</h2></a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            </ul>
+
+            <div>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                    </form>
+                    <li>
+                        <a href="#" class="nav-link px-2 link-dark fw-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                              </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user_pick.html" class="nav-link px-2 link-dark fw-bold heart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+                            <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="#" class="nav-link px-2 link-dark fw-bold">calmdownman</a></li>
+                    <li><a href="main_b_login.html" class="nav-link px-2 link-dark fw-bold">logout</a></li>
+                    <li>
+                        <a href="user_info.html" id="profile" style="padding: 15px;"> 
+                          <img src="https://yt3.ggpht.com/ytc/AKedOLTi6w4E6985-QdVBbovBSsnCeTETyj0WomjM5IY8Q=s88-c-k-c0x00ffffff-no-rj" alt="mdo" width="32" height="32" class="rounded-circle">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="container">
+            <div class="row navbar">
+              <div class="col-md-2 mx-auto">
+                <ul>
+                  <a href="manager_user_list.html"><li class="fs-5 selected">User list</li></a>
+                  <a href="manager_report_list.html"><li class="fs-5">Report list</li></a>
+                </ul>
+              </div>
+                <div class="col-md-10">
+                <h3>회원정보</h3>
+                <p>허위기재된 정보 혹은 부적절한 내용이 있는 경우 수정 / 탈퇴 조치</p>
+                <form class="form-signin">                  
+                  <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">ID</label>
+                    <div class="col-sm-10">
+                      <input type="text" readonly class="form-control-plaintext" value="calmdownman">
+                    </div>
+                  </div>
+
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" value="이병건">
+                    </div>
+                  </div>
+
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Address</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" value="자바시 자바구 자바동">
+                    </div>
+                  </div>
+
+                  <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">number</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" value="01012345678">
+                    </div>
+                  </div>
+                  <div class="row justify-content-between">
+                    <a href="main_a_login.html" class="col-md-5 btn btn-lg btn-outline-danger" type="submit">member out</a>
+                    <a href="main_a_login.html" class="col-md-5 btn btn-lg btn-outline-primary" type="submit">save</a>
+
+                  </div>
+
+                  
+                </form>
+
+
+                </div>
+            </div>
+      
+    
+        </div>
+      </div>
+
+    
+      <footer class="p-3 py-3 border-top">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                
+        
+                <div class="col">
+                  <h5>SC CENTER</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2 text-muted">1111-6666</li>
+                    <li class="nav-item mb-2 text-muted">MON-FRI : 10:00 ~ 17:00</li>
+                    <li class="nav-item mb-2 text-muted">LUNCH: 13:00 ~ 14:00</li>
+                    <li class="nav-item mb-2 text-muted">SAT, SUN, HOLIDAY OFF</li>
+                  </ul>
+                </div>
+            
+                <div class="col">
+                  <h5>ICT MARKET</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">대표 : 6666 |</li>
+                    <li class="nav-item mb-2"> 사업자등록번호 : 666666666|</li>
+                    <li class="nav-item mb-2">통신판매업 : 2022-01234 |</li>
+                    <li class="nav-item mb-2">주소 : 서울특별시 마포구 서교동 353-4 첨담빌딩 7층</li>
+                  </ul>
+                </div>
+            
+                <div class="col">
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">Copyright © ICT MARKET. All Rights Reserved.</li>
+                  </ul>
+                </div>
+        
+
+            </div>
+        </div>        
+
+
+      </footer>
+</body>
+</html>
